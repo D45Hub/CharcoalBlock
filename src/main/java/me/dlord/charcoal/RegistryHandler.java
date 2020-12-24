@@ -6,14 +6,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-
-/**
- * This class handles the registries we are modifiying inside this mod.
- * 
- * @author D-Lord
- */
 public class RegistryHandler
 {
+
     public static final DeferredRegister<Item> ITEMS = DeferredRegister
             .create(ForgeRegistries.ITEMS, CharcoalBlockMod.MODID);
 
@@ -34,5 +29,6 @@ public class RegistryHandler
         BLOCKS.register("charcoal_block", () -> charcoalBlock);
         ITEMS.register("charcoal_block", () -> charcoalBlockItem);
     }
+
 
 }
