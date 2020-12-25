@@ -9,6 +9,12 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
 
+/**
+ * Main class of this mod which starts the initialization of everything inside
+ * this mod including the crafting recipes.
+ * 
+ * @author D-Lord
+ */
 @Mod(modid = CharcoalBlockMod.MODID, version = CharcoalBlockMod.VERSION)
 public class CharcoalBlockMod
 {
@@ -22,6 +28,7 @@ public class CharcoalBlockMod
     {
         charcoalBlock = new CharcoalBlock();
 
+        // Registers the Charcoal Block and the FuelHandler
         GameRegistry.registerBlock(charcoalBlock, charcoalBlock.getUnlocalizedName().substring(5));
         GameRegistry.registerFuelHandler(new FuelHandler());
     }
@@ -29,6 +36,7 @@ public class CharcoalBlockMod
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
+        // Adds the crafting recipes of the Charcoal Block
         GameRegistry.addRecipe(new ItemStack(charcoalBlock),
                 new Object[] {"CCC", "CCC", "CCC", 'C', new ItemStack(Items.coal, 1, 1)});
         GameRegistry.addShapelessRecipe(new ItemStack(Items.coal, 9, 1),

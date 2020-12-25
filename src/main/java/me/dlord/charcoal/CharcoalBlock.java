@@ -5,6 +5,12 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
 
+/**
+ * Class for the Charcoal Block which contains the block's properties.
+ * 
+ * @author D-Lord
+ */
+
 public class CharcoalBlock extends Block
 {
 

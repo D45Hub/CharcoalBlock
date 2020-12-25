@@ -7,6 +7,11 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 
 
+/**
+ * This class handles the fuel parameters of the modded items (Charcoal Block)
+ * 
+ * @author D-Lord
+ */
 public class FuelHandler implements IFuelHandler
 {
 
