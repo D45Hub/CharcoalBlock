@@ -10,7 +10,6 @@ import net.minecraft.creativetab.CreativeTabs;
  * 
  * @author D-Lord
  */
-
 public class CharcoalBlock extends Block
 {
 
